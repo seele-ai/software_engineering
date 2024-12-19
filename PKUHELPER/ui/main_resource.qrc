@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>通知.png</file>
+    <file>hands-helping-solid.png</file>
+    <file>chat.png</file>
+    <file>home.png</file>
+    <file>cil-home.png</file>
+    <file>cil-chat-bubble.png</file>
+    <file>帮助.png</file>
+    <file>缩小.png</file>
+    <file>关闭.png</file>
+  </qresource>
+  <qresource prefix="image"/>
+</RCC>

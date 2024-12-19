@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="image">
+    <file>login.jpg</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>注册.png</file>
+    <file>登录配置.png</file>
+    <file>关闭.png</file>
+  </qresource>
+</RCC>

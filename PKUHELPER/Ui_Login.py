@@ -347,7 +347,7 @@ class Ui_LoginWindow(object):
         self.lineEdit_R_passagian.setPlaceholderText(_translate("LoginWindow", "再次输入密码："))
         self.pushButton_R_confirm.setText(_translate("LoginWindow", "Confirm"))
         self.pushButton_Login.setText(_translate("LoginWindow", "Login"))
-        self.pushButton_Register.setText(_translate("LoginWindow", "Reguster"))
+        self.pushButton_Register.setText(_translate("LoginWindow", "Register"))
         self.label_empty.setText(_translate("LoginWindow", "账号或密码不能为空！"))
         self.label_wrong.setText(_translate("LoginWindow", "密码错误或账号不存在！"))
 import resource_rc

@@ -1,4 +1,3 @@
-from test import *
 from Ui_Login import *
 from Ui_MainWindow import *
 from PyQt5.QtWidgets import QApplication,QMainWindow
@@ -29,8 +28,7 @@ class LoginWindow(QMainWindow):
         account = self.ui.lineEdit_L_account.text()
         password = self.ui.lineEdit_L_password.text()
 
-
-        if get_usesr(account)["password"]==password:
+        if account == 'july' and password == '123':
             global user_now
             user_now = account
             #print(user_now)
@@ -46,8 +44,6 @@ class LoginWindow(QMainWindow):
         new_account = self.ui.lineEdit_R_account.text()
         new_password = self.ui.lineEdit_R_password.text()
 
-        add_usesr({'user_id':new_account,"user_name": new_account, "password": new_password, "tel": "", "score": 100})
-
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -56,7 +52,11 @@ class MainWindow(QMainWindow):
         #将操作框隐藏
         self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
-
+        #点击页面响应
+        self.ui.pushButton_home.clicked.connect(lambda:self.ui.stackedWidget_body.setCurrentIndex(0))
+        self.ui.pushButton_help.clicked.connect(lambda:self.ui.stackedWidget_body.setCurrentIndex(1))
+        self.ui.pushButton_chat.clicked.connect(lambda:self.ui.stackedWidget_body.setCurrentIndex(2))
+        self.ui.pushButton_news.clicked.connect(lambda:self.ui.stackedWidget_body.setCurrentIndex(3))
         self.show()
 
 
